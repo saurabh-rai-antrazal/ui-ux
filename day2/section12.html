@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap");
+    * {
+      margin: 0px;
+      padding: 0px;
+      font-family: Cormorant;
+    }
+    header {
+      margin: 1em;
+    }
+    h1 {
+      display: inline-block;
+      font-size: x-large;
+      font-weight: 300;
+      margin: 15px 10px;
+    }
+    nav {
+      margin-left: 10px;
+      display: inline-block;
+    }
+    a {
+      color: black;
+      font-size: large;
+      text-decoration: none;
+    }
+    li {
+      display: inline-block;
+      margin: 10px;
+    }
+    a.active {
+      border-bottom: 1px solid black;
+    }
+    img {
+      height: 400px;
+      width: 50;
+    }
+    div.card {
+      display: inline-block;
+      width: calc(50% - 1.2em);
+      margin: 0px 0.5em 1em 0.5em;
+    }
+    img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+    }
+    div.images {
+      margin: 0px 1em;
+    }
+    .card > h3 {
+      font-weight: 400;
+      font-size: small;
+    }
+    footer{
+      margin: 80px 0px 50px 100px;
+      width: 500px;
+    }
+    footer h3{
+      font-weight: 300;
+      font-size: 1.5rem;
+    }
+    h3.work{
+      display: inline-block;
+      margin-top: 30px;
+      border-bottom: 1px solid black;
+    }
+    #contact{
+      margin-top: 30px;
+      font-size: medium;
+    }
+
+  </style>
+  <body>
+    <header>
+      <h1>Joseph Shmoe | Ceramics</h1>
+      <nav>
+        <ul>
+          <li><a class="active" href="#Work">Work</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="images">
+      <div class="card">
+        <img
+          src="https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80"
+          alt=""
+        />
+        <h3>hello World!</h3>
+      </div>
+      <div class="card">
+        <img
+          src="https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80"
+          alt=""
+        />
+        <h3>hello World!</h3>
+      </div>
+      <div class="card">
+        <img
+          src="https://images.unsplash.com/photo-1610701596007-11502861dcfa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
+          alt=""
+        />
+        <h3>hello World!</h3>
+      </div>
+      <div class="card">
+        <img
+          src="https://images.unsplash.com/photo-1576020799627-aeac74d58064?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2615&q=80"
+        />
+        <h3>hello World!</h3>
+      </div>
+      <div class="card">
+        <img
+          src="https://images.unsplash.com/photo-1525974160448-038dacadcc71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2274&q=80"
+        />
+        <h3>hello World!</h3>
+      </div>
+      <div class="card">
+        <img
+          src="https://images.unsplash.com/photo-1610701596061-2ecf227e85b2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80"
+        />
+        <h3>hello World!</h3>
+      </div>
+      <div class="card">
+        <img
+          src="https://images.unsplash.com/photo-1490312278390-ab64016e0aa9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80"
+        />
+        <h3>hello World!</h3>
+      </div>
+      <div class="card">
+        <img
+          src="https://images.unsplash.com/photo-1605883705077-8d3d3cebe78c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80"
+        />
+        <h3>hello World!</h3>
+      </div>
+    </div>
+  </body>
+  <footer>
+    <h3 id="about">
+      Designing, making, and selling goods of timeless design and uncompromising
+      integrity—made thoughtfully, honestly, and with pride—to be enjoyed with
+      similar intention.
+    </h3>
+    <h3 class="work">Let's Work Together!</h3>
+
+    <div id="contact">
+      <h5>email2001@gmail.com</h5>
+      <h5>+91 90909-80808</h5>
+    </div>
+  </footer>
+</html>

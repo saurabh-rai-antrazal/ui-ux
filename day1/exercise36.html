@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+body{
+  font-family: Outfit;
+}
+</style>
+<body>
+  <H2>Your Course Landing Page</H2>
+  <form action="">
+    <label for="title">Course Title</label>
+    <input type="text" name="title" id="title" />
+    <br>
+    <label for="description">Course description</label>
+    <br>
+    <textarea name="desc" id="description" cols="50" rows="5"></textarea>
+    <br>
+    <label for="lvl">Skill Level</label>
+    <Select id="lvl" name="level">
+      <option value="b">Beginner</option>
+      <option value="i">Intermediate</option>
+      <option value="p">Professional</option>
+    </Select>
+    <br>
+    <label for="publish">Ready to publish the course?</label>
+    <input type="checkbox" name="publish" id="publish"/>
+    <br>
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>

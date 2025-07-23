@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: Outfit;
+    }
+
+    .light {
+      font-weight: 500;
+    }
+
+    .h-13 {
+      font-size: 13px;
+    }
+
+    .h-16 {
+      font-size: 16px;
+    }
+
+    .h-35 {
+      font-size: 35px;
+    }
+
+    .h-40 {
+      font-size: 40px;
+    }
+
+    body {
+      height: 100vh;
+    }
+    h1 {
+      text-align: center;
+      margin: 1em;
+      font-size: 2em;
+    }
+    .container {
+      padding: 10px;
+      box-shadow: 2px 2px 12px rgb(220, 220, 220);
+      background-color: white;
+      border-radius: 0.5em;
+      width: 100vw;
+      max-width: 50em;
+      margin: 0 auto;
+    }
+    nav {
+      position: relative;
+    }
+    .top-hr {
+      z-index: 1;
+      position: absolute;
+      top: 44px;
+      border: 2.5px solid rgb(200, 200, 200);
+      width: 100%;
+      padding: 0px;
+      margin: 0px;
+      box-sizing: border-box;
+    }
+    .navlinks {
+      display: flex;
+      margin: 0 auto;
+      width: 85%;
+      height: 3em;
+      box-sizing: border-box;
+      justify-content: space-around;
+    }
+    .navlinks a {
+      z-index: 2;
+      text-decoration: none;
+      text-transform: capitalize;
+      color: rgba(255, 99, 71, 0.664);
+      padding: 1em 2em;
+      transition: all 0.1s ease;
+    }
+
+    a:hover {
+      color: rgba(255, 100, 70);
+    }
+
+    .navlinks .active {
+      font-weight: 500;
+      color: tomato;
+      border-bottom: 4.5px solid tomato;
+    }
+
+    .toggle {
+      margin: 0 auto;
+    }
+
+    .price-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(255, 100, 70, 0.15);
+      height: 10em;
+      width: 20em;
+      margin: 0 auto;
+      border-radius: 1em;
+    }
+    .price span {
+      color: tomato;
+    }
+
+    .uc {
+      text-transform: uppercase;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      gap: 1em;
+      justify-content: center;
+      align-items: end;
+      padding: 1em;
+      margin: 1em 0.5em;
+    }
+
+    .card {
+      height: 15em;
+      width: 0.5em;
+      text-align: center;
+      padding: 1em;
+      min-width: 15em;
+      background-color: rgba(255, 100, 70, 0.15);
+      border-radius: 1em;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      box-shadow: 3px 3px 10px rgb(220, 220, 220);
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+    }
+
+    .btn {
+      max-width: 160px;
+      margin-top: auto;
+      background-color: black;
+      color: white;
+      border-radius: 5px;
+      padding: 10px;
+      border: none;
+    }
+
+    .info {
+      margin: 0 auto;
+      max-width: 80%;
+      padding: 16px;
+    }
+
+    .range-container {
+      padding: 16px;
+      margin: 0 auto;
+      max-width: 70%;
+    }
+
+    .ip-range {
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .range-value {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      color: gray;
+    }
+
+    .card2 {
+      border-radius: 0 0 1em 1em;
+      position: relative;
+    }
+
+    .discount {
+      background-color: black;
+      color: white;
+      position: absolute;
+      right: 0;
+      top: -20px;
+      width: 100%;
+      border-radius: 1em 1em 0 0;
+    }
+
+    hr {
+      width: 40%;
+      margin: 5px;
+    }
+  </style>
+  <body>
+    <h1>Estimate your Cost</h1>
+    <div class="container">
+      <nav>
+        <div class="navlinks">
+          <a href="">free</a>
+          <a href="" class="active">team</a>
+          <a href="">professional</a>
+          <a href="">enterprises</a>
+        </div>
+        <hr class="top-hr" />
+      </nav>
+      <div class="toggle">
+        <img src="" alt="" />
+        <a href="">Mobile</a>
+        <a href="">Web</a>
+        <img src="" alt="" />
+      </div>
+      <div class="price-container">
+        <h4 class="h-13 uc">Monthly Sessions</h4>
+        <h2 class="price h-40"><span>$</span> 20,000</h2>
+      </div>
+      <div class="info">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, aliquid facere! Fugit rem doloribus accusantium.
+        </p>
+      </div>
+      <div class="range-container">
+        <input type="range" class="ip-range" value="2" name="" id="" min="2" max="12" step="2" />
+        <div class="range-value">
+          <p>2</p>
+          <p>4</p>
+          <p>6</p>
+          <p>8</p>
+          <p>10</p>
+          <p>12</p>
+        </div>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <h4 class="uc light h-13">monthly billing</h4>
+          <h3 class="price light h-35"><span>$</span>200</h3>
+          <h4 class="uc light h-13">price</h4>
+          <hr />
+          <h4 class="light h-16">Starting from 1 month data retention</h4>
+          <h4 class="light h-16">10 team members</h4>
+          <button class="btn">Try Free for 14 days</button>
+        </div>
+        <div class="discount-card-container">
+          <div class="card card2">
+            <div class="discount uc">
+              <p>save upto 16%</p>
+            </div>
+            <h4 class="uc light h-13">yearly billing</h4>
+            <h3 class="price light h-35"><span>$</span>200</h3>
+            <h4 class="uc light h-13">price</h4>
+            <hr />
+            <h4 class="light h-16">Starting from 1 month data retention</h4>
+            <h4 class="light h-16">10 team members</h4>
+            <button class="btn">Try Free for 14 days</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

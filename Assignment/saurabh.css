@@ -1,0 +1,419 @@
+:root {
+  /* colors */
+  --dark: #000;
+  --light: #fff;
+  --gray: #6e6e6e;
+  --blue-1: #6388fb;
+  --tomato: #fb6c47;
+  --blue-2: #4563c5;
+  --dark-blue: #383a53;
+
+  /* font-size */
+  --h1-font: 56px;
+  --h1-height: 80px;
+  --h2-font: 40px;
+  --h2-height: 60px;
+  --h3-font: 34px;
+  --h4-font: 22px;
+  --h5-font: 16px;
+  --h6-font: 10px;
+  --p-1: 24px;
+  --p-2: 18px;
+  --p-3: 16px;
+  --a: 14px;
+
+  /* screen width */
+  --standard-width: 1080px;
+
+  /* spacing */
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 32px;
+  --spacing-xl: 64px;
+
+  --standard-box-shadow: 0px 2px 40px rgb(0, 0, 0, 0.1);
+}
+
+/* display utilities */
+.flex {
+  display: flex;
+}
+.grid {
+  display: grid;
+}
+.flex-col {
+  flex-direction: column;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-space-between {
+  justify-content: space-between;
+}
+.justify-start {
+  justify-content: flex-start;
+}
+.align-center {
+  align-items: center;
+}
+.align-start {
+  align-items: flex-start;
+}
+
+/* margin utilities */
+.m-s {
+  margin: var(--spacing-sm);
+}
+.mt-s {
+  margin-top: var(--spacing-sm);
+}
+.mt-m {
+  margin-top: var(--spacing-md);
+}
+.mt-l {
+  margin-top: var(--spacing-lg);
+}
+.mt-xl {
+  margin-top: var(--spacing-xl);
+}
+.mr-s {
+  margin-right: var(--spacing-sm);
+}
+.mb-xl {
+  margin-bottom: var(--spacing-xl);
+}
+.mb-m{
+  margin-bottom: var(--spacing-md);
+}
+.ml-s {
+  margin-left: var(--spacing-sm);
+}
+.ml-m {
+  margin-left: var(--spacing-md);
+}
+.my-s {
+  margin-top: var(--spacing-sm);
+  margin-bottom: var(--spacing-sm);
+}
+.my-m {
+  margin-top: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+}
+.my-l {
+  margin-top: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
+}
+.my-xl {
+  margin-top: var(--spacing-xl);
+  margin-bottom: var(--spacing-xl);
+}
+.mx-m{
+  margin-left: var(--spacing-md);
+  margin-right: var(--spacing-md);
+}
+
+/* padding utilities */
+.p-s {
+  padding: var(--spacing-sm);
+}
+.p-m {
+  padding: var(--spacing-md);
+}
+.p-l {
+  padding: var(--spacing-lg);
+}
+.p-xl {
+  padding: var(--spacing-xl);
+}
+.pt-s {
+  padding-top: var(--spacing-sm);
+}
+.pt-m {
+  padding-top: var(--spacing-md);
+}
+.pr-s {
+  padding-right: var(--spacing-sm);
+}
+.pr-m {
+  padding-right: var(--spacing-md);
+}
+.pb-s {
+  padding-bottom: var(--spacing-sm);
+}
+.pb-m {
+  padding-bottom: var(--spacing-md);
+}
+.pl-s {
+  padding-left: var(--spacing-sm);
+}
+.pl-m {
+  padding-left: var(--spacing-md);
+}
+.px-s {
+  padding-left: var(--spacing-sm);
+  padding-right: var(--spacing-sm);
+}
+.px-m {
+  padding-left: var(--spacing-md);
+  padding-right: var(--spacing-md);
+}
+.px-l{
+  padding-left: var(--spacing-lg);
+  padding-right: var(--spacing-lg);
+}
+.py-s {
+  padding-top: var(--spacing-sm);
+  padding-bottom: var(--spacing-sm);
+}
+.py-m {
+  padding-top: var(--spacing-md);
+  padding-bottom: var(--spacing-md);
+}
+
+/* positioning utilities */
+.position-abs {
+  position: absolute;
+}
+.position-rel {
+  position: relative;
+}
+.position-fixed {
+  position: fixed;
+}
+
+/* width utilities */
+.w-full {
+  width: 100%;
+}
+.w-half {
+  width: 50%;
+}
+.w-45 {
+  width: 40%;
+}
+.w-55 {
+  width: 55%;
+}
+.w-15 {
+  width: 15%;
+}
+.w-75 {
+  width: 75%;
+}
+.w-90 {
+  width: 90%;
+}
+.max-w-full {
+  max-width: 100%;
+}
+.max-w-standard {
+  max-width: var(--standard-width);
+}
+
+/* height utilities */
+.h-full {
+  height: 100%;
+}
+.h-auto {
+  height: auto;
+}
+.h-100vh {
+  height: 100vh;
+}
+
+/* color utilities */
+.text-dark {
+  color: var(--dark);
+}
+.text-light {
+  color: var(--light);
+}
+.text-gray {
+  color: var(--gray);
+}
+.text-blue-1 {
+  color: var(--blue-1);
+}
+.text-blue-2 {
+  color: var(--blue-2);
+}
+.text-tomato {
+  color: var(--tomato);
+}
+.bg-dark {
+  background-color: var(--dark);
+}
+.bg-light {
+  background-color: var(--light);
+}
+.bg-gray {
+  background-color: var(--gray);
+}
+.bg-blue-1 {
+  background-color: var(--blue-1);
+}
+.bg-blue-2 {
+  background-color: var(--blue-2);
+}
+.bg-dark-blue {
+  background-color: var(--dark-blue);
+}
+.bg-tomato {
+  background-color: var(--tomato);
+}
+
+/* text utilities */
+.text-center {
+  text-align: center;
+}
+.text-start {
+  text-align: start;
+}
+.text-end {
+  text-align: end;
+}
+.bold {
+  font-weight: 700;
+}
+.font-bolder {
+  font-weight: bolder;
+}
+.font-medium {
+  font-weight: 500;
+}
+.font-normal {
+  font-weight: 400;
+}
+.font-light {
+  font-weight: 300;
+}
+
+/* other utilities */
+.shadow {
+  box-shadow: var(--standard-box-shadow);
+}
+.object-fit {
+  height: auto;
+  max-width: 100%;
+}
+.border-box {
+  box-sizing: border-box;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+.no-decoration {
+  text-decoration: none;
+}
+.no-list-style {
+  list-style-type: none;
+}
+.border-none {
+  border: none;
+}
+.border-radius-5 {
+  border-radius: 5px;
+}
+.border-radius-50 {
+  border-radius: 50%;
+}
+.z-index-1 {
+  z-index: 1;
+}
+.z-index-2 {
+  z-index: 2;
+}
+.z-index-3 {
+  z-index: 3;
+}
+.z-index-10 {
+  z-index: 10;
+}
+.z-index-11 {
+  z-index: 11;
+}
+.z-index-neg1 {
+  z-index: -1;
+}
+.z-index-neg2 {
+  z-index: -2;
+}
+.opacity-05 {
+  opacity: 0.5;
+}
+.opacity-08 {
+  opacity: 0.8;
+}
+.opacity-09 {
+  opacity: 0.9;
+}
+
+/* gap utilities */
+.gap-s {
+  gap: var(--spacing-sm);
+}
+.gap-m {
+  gap: var(--spacing-md);
+}
+.gap-l {
+  gap: var(--spacing-lg);
+}
+.gap-xl {
+  gap: var(--spacing-xl);
+}
+
+/* transform utilities */
+.transform-center-x {
+  left: 50%;
+  transform: translateX(-50%);
+}
+.transform-center-y {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.transform-center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* display responsive utilities */
+.hidden {
+  display: none;
+}
+.visible {
+  display: block;
+}
+.inline-block {
+  display: inline-block;
+}
+
+/* flex utilities */
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.flex-nowrap {
+  flex-wrap: nowrap;
+}
+.align-content-center{
+  align-content: center;
+}
+.align-content-start {
+  align-content: start;
+}
+
+/* transition utilities */
+.transition-transform {
+  transition: transform 0.3s;
+}
+
+/* whitespace utilities */
+.whitespace-nowrap {
+  white-space: nowrap;
+}

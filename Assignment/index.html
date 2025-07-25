@@ -3,101 +3,101 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="saurabh.css">
     <link rel="stylesheet" href="styles.css" />
     <title>Document</title>
   </head>
-  <body>
-    <main>
-      <div class="hero-container">
-        <div class="section-container">
-          <nav class="navbar">
+  <body class="w-full flex justify-center align-center z-index-1">
+    <main class="w-full">
+      <div class="hero-container flex justify-center my-s px-s">
+        <div class="section-container position-rel">
+          <nav class="navbar flex align-center justify-space-between px-s mb-xl mt-s">
             <img src="./assets/logo.png" alt="" id="nav-logo" />
-            <ul class="menu">
-              <li><a href="#" target="_top">Home</a></li>
-              <li><a href="#features">Features</a></li>
-              <li><a href="#reviews">Reviews</a></li>
-              <li><a href="#download">Download</a></li>
+            <ul class="menu flex">
+              <li class="no-list-style mx-m"><a class="text-light no-decoration bold" href="#" target="_top">Home</a></li>
+              <li class="no-list-style mx-m"><a class="text-light no-decoration bold" href="#features">Features</a></li>
+              <li class="no-list-style mx-m"><a class="text-light no-decoration bold" href="#reviews">Reviews</a></li>
+              <li class="no-list-style mx-m"><a class="text-light no-decoration bold" href="#download">Download</a></li>
             </ul>
-            <div class="icons">
+            <div class="icons flex mr-s">
               <a href="#"><img src="./assets/facebook.svg" alt="" /></a>
               <a href="#"><img src="./assets/instagram.svg" alt="" /></a>
               <a href="#"><img src="./assets/google.svg" alt="" /></a>
             </div>
-            <div class="hamburger">
-              <div class="bar1"></div>
-              <div class="bar2"></div>
-              <div class="bar3"></div>
+            <div class="hamburger flex justify-center flex-col z-index-11 hidden">
+              <div class="bar1 bg-light border-radius-5"></div>
+              <div class="bar2 bg-light border-radius-5"></div>
+              <div class="bar3 bg-light border-radius-5"></div>
             </div>
           </nav>
-          <nav class="mobileNav">
-            <a href="#" target="_top">Home</a>
-            <a href="#features">Features</a>
-            <a href="#reviews">Reviews</a>
-            <a href="#download">Download</a>
-            <div class="icons">
-              <a href="#"><img src="./assets/facebook.svg" alt="" /></a>
-              <a href="#"><img src="./assets/instagram.svg" alt="" /></a>
-              <a href="#"><img src="./assets/google.svg" alt="" /></a>
+          <nav class="mobileNav flex justify-center align-center flex-col w-full z-index-10 h-100vh bg-gray position-fixed p-m">
+            <a class="flex justify-center align-center flex-col no-decoration text-light my-m bold" href="#" target="_top">Home</a>
+            <a class="flex justify-center align-center flex-col no-decoration text-light my-m bold" href="#features">Features</a>
+            <a class="flex justify-center align-center flex-col no-decoration text-light my-m bold" href="#reviews">Reviews</a>
+            <a class="flex justify-center align-center flex-col no-decoration text-light my-m bold" href="#download">Download</a>
+            <div class="icons flex gap-l mt-m">
+              <a class="flex justify-center align-center flex-col" href="#"><img src="./assets/facebook.svg" alt="" /></a>
+              <a class="flex justify-center align-center flex-col" href="#"><img src="./assets/instagram.svg" alt="" /></a>
+              <a class="flex justify-center align-center flex-col" href="#"><img src="./assets/google.svg" alt="" /></a>
             </div>
           </nav>
-          <div class="two-col">
+          <div class="two-col flex w-full ">
             <div class="left-col">
-              <h1>Get the most fun weather app</h1>
-              <div class="btn-container">
-                <button class="btn">Download</button>
-                <button class="btn2">Features</button>
+              <h1 class="text-light">Get the most fun weather app</h1>
+              <div class="btn-container flex justify-center">
+                <button class="btn bg-tomato text-light bold py-m px-l border-none border-radius-5 cursor-pointer">Download</button>
+                <button class="btn2 bg-blue-2 text-light bold py-m px-l border-none border-radius-5 cursor-pointer">Features</button>
               </div>
             </div>
-            <div class="right-col">
+            <div class="right-col flex justify-center">
               <img class="object-fit" src="./assets/phone1.png" alt="" />
             </div>
-            
           </div>
-          <img src="./assets/homebg.png" alt="" id="homebg"/>
+          <img src="./assets/homebg.png" alt="" id="home-bg" class="position-abs"/>
         </div>
       </div>
 
-      <div class="header" id="features">
+      <div class="header flex justify-center my-xl" id="features">
         <div class="section-container">
-          <h3>Perfect Features</h3>
-          <p class="subtitle2">Only necessary</p>
+          <h3 class="my-s text-center text-blue-1">Perfect Features</h3>
+          <p class="subtitle2 text-center text-gray">Only necessary</p>
         </div>
       </div>
 
-      <div class="features-container">
+      <div class="features-container flex justify-center px-s">
         <div class="section-container">
-          <div class="features-grid">
-            <div class="card">
-              <div class="left-col">
-                <img class="object-fit" src="./assets/gem.png" alt="" />
+          <div class="features-grid grid w-full gap-l my-lg">
+            <div class="card flex justify-space-between">
+              <div class="left-col w-15">
+                <img class="w-full h-auto" src="./assets/gem.png" alt="" />
               </div>
-              <div class="right-col">
-                <h4>Usability</h4>
-                <p class="subtitle3">
+              <div class="right-col w-75">
+                <h4 class="my-m font-medium">Usability</h4>
+                <p class="subtitle3 text-gray">
                   Sometimes the simplest things are the hardest to find. So we
                   created a new line for everyday life.
                 </p>
               </div>
             </div>
-            <div class="card">
-              <div class="left-col">
-                <img class="object-fit" src="./assets/stack.png" alt="" />
+            <div class="card flex justify-space-between">
+              <div class="left-col w-15">
+                <img class="w-full h-auto" src="./assets/stack.png" alt="" />
               </div>
-              <div class="right-col">
-                <h4>Parallax Effect</h4>
-                <p class="subtitle3">
+              <div class="right-col w-75">
+                <h4 class="my-m font-medium">Parallax Effect</h4>
+                <p class="subtitle3 text-gray">
                   Sometimes the simplest things are the hardest to find. So we
                   created a new line for everyday life.
                 </p>
               </div>
             </div>
-            <div class="card">
-              <div class="left-col">
-                <img class="object-fit" src="./assets/file.png" alt="" />
+            <div class="card flex justify-space-between">
+              <div class="left-col w-15">
+                <img class="w-full h-auto" src="./assets/file.png" alt="" />
               </div>
-              <div class="right-col">
-                <h4>Unlimites Colors</h4>
-                <p class="subtitle3">
+              <div class="right-col w-75">
+                <h4 class="my-m font-medium">Unlimited Colors</h4>
+                <p class="subtitle3 text-gray">
                   Sometimes the simplest things are the hardest to find. So we
                   created a new line for everyday life.
                 </p>
@@ -107,31 +107,31 @@
         </div>
       </div>
 
-      <div class="images">
+      <div class="images flex justify-center">
         <div class="section-container">
-          <div class="image-slide">
+          <div class="image-slide flex position-rel overflow-x-hidden flex-nowrap">
             <div class="carousel-container">
-              <div class="card-l1 shadow">
+              <div class="card-l1 shadow position-rel w-full h-auto z-index-1">
                 <img class="object-fit" src="./assets/drag1.png" alt="" />
               </div>
             </div>
             <div class="carousel-container">
-              <div class="card-l2 shadow">
+              <div class="card-l2 shadow position-rel w-full h-auto z-index-2">
                 <img class="object-fit" src="./assets/drag2.png" alt="" />
               </div>
             </div>
             <div class="carousel-container">
-              <div class="card-mid shadow">
+              <div class="card-mid shadow position-rel w-full h-auto z-index-3">
                 <img class="object-fit" src="./assets/drag3.png" alt="" />
               </div>
             </div>
             <div class="carousel-container">
-              <div class="card-r2 shadow">
+              <div class="card-r2 shadow position-rel w-full h-auto z-index-2">
                 <img class="object-fit" src="./assets/drag1.png" alt="" />
               </div>
             </div>
             <div class="carousel-container">
-              <div class="card-r1 shadow">
+              <div class="card-r1 shadow position-rel w-full h-auto z-index-1">
                 <img class="object-fit" src="./assets/drag2.png" alt="" />
               </div>
             </div>
@@ -146,79 +146,79 @@
       </div>
 
       <!-- screenshots -->
-      <div class="header" id="screenshots">
+      <div class="header flex justify-center my-xl" id="screenshots">
         <div class="section-container">
-          <h3>Screenshots</h3>
-          <p class="subtitle2">The brightest images</p>
+          <h3 class="my-s text-center text-blue-1">Screenshots</h3>
+          <p class="subtitle2 text-center text-gray">The brightest images</p>
         </div>
       </div>
 
-      <div class="screenshots">
+      <div class="screenshots flex justify-center mt-xl px-s">
         <div class="section-container">
-          <div class="two-col">
-            <div class="left-col">
-              <div class="image-wrapper">
-                <span class="bg-text">Cloudy</span>
-                <span class="bg-circle bg-circle2">cloudy</span>
-                <span class="bg-circle bg-circle1">15&nbsp&deg</span>
+          <div class="two-col flex my-m">
+            <div class="left-col flex align-center flex-col">
+              <div class="image-wrapper position-rel inline-block">
+                <span class="bg-text position-abs whitespace-nowrap">Cloudy</span>
+                <span class="bg-circle flex justify-center align-center bg-circle2 position-abs text-light bold">cloudy</span>
+                <span class="bg-circle flex justify-center align-center bg-circle1 position-abs text-light bold">15&nbsp&deg</span>
                 <img
-                  class="screen-image object-fit"
+                  class="screen-image object-fit position-rel "
                   src="assets/screen01.png"
                 />
               </div>
             </div>
-            <div class="right-col">
+            <div class="right-col align-content-center">
               <img class="object-fit" src="./assets/cloud1.png" alt="" />
-              <h2>When the clouds</h2>
-              <p class="subtitle1">
+              <h2 class="my-m font-medium">When the clouds</h2>
+              <p class="subtitle1 font-normal text-gray">
                 Variable information on the air humidity, the feeling of the
                 weather, and the ability to share the with your friends
               </p>
-              <div class="info">
-                <div class="circle">
-                  <h5>95%</h5>
+              <div class="info flex position-rel mt-xl opacity-05">
+                <div class="circle flex justify-center align-center position-rel shadow bg-light">
+                  <h5 class="position-abs text-gray">95%</h5>
                 </div>
-                <div class="circle">
-                  <h5>9&#176;</h5>
+                <div class="circle flex justify-center align-center position-abs shadow bg-light">
+                  <h5 class="position-abs text-gray">9&#176;</h5>
                 </div>
-                <div class="circle">
-                  <h5>Rainy</h5>
+                <div class="circle flex justify-center align-center position-abs shadow bg-light">
+                  <h5 class="position-abs text-gray">Rainy</h5>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="screenshots">
+      <div class="screenshots flex justify-center px-s">
         <div class="section-container">
-          <div class="two-col">
-            <div class="left-col">
+          <div class="two-col flex mt-l mb-m">
+            <div class="left-col align-content-center">
               <img class="object-fit" src="./assets/sun1.png" alt="" />
-              <h2>When the clouds</h2>
-              <p class="subtitle1">
+              <h2 class="my-m font-medium">When the clouds</h2>
+              <p class="subtitle1 font-normal text-gray">
                 Sometimes the simplest things are the hardest to find. So we
                 created a new line fo everyday life. Sometimes the simplest
                 things
               </p>
-              <div class="info">
-                <div class="circle">
-                  <h5>95%</h5>
+              <div class="info flex position-rel opacity-05 mt-xl">
+                <div class="circle flex justify-center align-center position-rel shadow bg-light">
+                  <h5 class="position-abs text-gray">95%</h5>
                 </div>
-                <div class="circle">
-                  <h5>9&#176;</h5>
+                <div class="circle flex justify-center align-center position-abs shadow bg-light">
+                  <h5 class="position-abs text-gray">9&#176;</h5>
                 </div>
-                <div class="circle">
-                  <h5>Rainy</h5>
+                <div class="circle flex justify-center align-center position-abs shadow bg-light">
+                  <h5 class="position-abs text-gray">Rainy</h5>
                 </div>
               </div>
             </div>
-            <div class="right-col">
-              <div class="image-wrapper">
-                <span class="bg-text">Sunny</span>
-                <span class="bg-circle bg-circle3">cloudy</span>
-                <span class="bg-circle bg-circle4">25&nbsp&deg</span>
+            <div class="right-col flex align-center flex-col">
+              <div class="image-wrapper position-rel inline-block">
+                <span class="bg-text position-abs whitespace-nowrap">Sunny</span>
+                <span class="bg-circle flex justify-center align-center bg-circle3 position-abs text-light bold">cloudy</span>
+                <span class="bg-circle flex justify-center align-center bg-circle4 position-abs text-light bold">25&nbsp&deg</span>
                 <img
-                  class="screen-image object-fit"
+                  class="screen-image object-fit position-rel"
                   src="assets/screen02.png"
                 />
               </div>
@@ -226,139 +226,140 @@
           </div>
         </div>
       </div>
-      <div class="screenshots">
+      <div class="screenshots flex justify-center px-s">
         <div class="section-container">
-          <div class="two-col">
-            <div class="left-col">
-              <div class="image-wrapper">
-                <span class="bg-text">Rainy</span>
-                <span class="bg-circle bg-circle5">Rainy</span>
-                <span class="bg-circle bg-circle6">9&nbsp&deg</span>
+          <div class="two-col flex mt-l">
+            <div class="left-col flex align-center flex-col">
+              <div class="image-wrapper position-rel inline-block">
+                <span class="bg-text position-abs whitespace-nowrap">Rainy</span>
+                <span class="bg-circle flex justify-center align-center bg-circle5 position-abs text-light bold">Rainy</span>
+                <span class="bg-circle flex justify-center align-center bg-circle6 position-abs text-light bold">9&nbsp&deg</span>
                 <img
-                  class="screen-image object-fit"
+                  class="screen-image object-fit position-rel"
                   src="assets/screen03.png"
                 />
               </div>
             </div>
-            <div class="right-col">
+            <div class="right-col align-content-center">
               <img class="object-fit" src="./assets/rainy1.png" alt="" />
-              <h2>When the rain</h2>
-              <p class="subtitle1">
+              <h2 class="my-m font-medium">When the rain</h2>
+              <p class="subtitle1 font-normal text-gray">
                 Sometimes the simplest things are the hardest to find. So we
                 created a new line fo everyday life. Sometimes the simplest
                 things
               </p>
-              <div class="info">
-                <div class="circle">
-                  <h5>95%</h5>
+              <div class="info flex position-rel opacity-05 mt-xl">
+                <div class="circle flex justify-center align-center position-rel shadow bg-light">
+                  <h5 class="position-abs text-gray">95%</h5>
                 </div>
-                <div class="circle">
-                  <h5>9&#176;</h5>
+                <div class="circle flex justify-center align-center position-abs shadow bg-light">
+                  <h5 class="position-abs text-gray">9&#176;</h5>
                 </div>
-                <div class="circle">
-                  <h5>Rainy</h5>
+                <div class="circle flex justify-center align-center position-abs shadow bg-light">
+                  <h5 class="position-abs text-gray">Rainy</h5>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
       <!-- review section -->
-      <div class="header" id="reviews">
+      <div class="header flex justify-center my-xl" id="reviews">
         <div class="section-container">
-          <h3>What reviews are saying</h3>
-          <p class="subtitle2">Reviews</p>
+          <h3 class="my-s text-center text-blue-1">What reviews are saying</h3>
+          <p class="subtitle2 text-center text-gray">Reviews</p>
         </div>
       </div>
-      <div class="review-container">
+      <div class="review-container flex justify-center w-full my-xl px-s">
         <div class="section-container">
-          <div class="review-grid">
+          <div class="review-grid grid gap-m">
             <div class="card">
-              <h1>"</h1>
+              <h1 class="text-blue-1 text-start">"</h1>
               <p class="subtitle1 bold">
                 what art offers is space - a certain breathing room for the
                 spirit.
               </p>
-              <p class="subtitle2">- John Updike</p>
-              <h1>"</h1>
+              <p class="subtitle2 mt-s text-start text-gray">- John Updike</p>
+              <h1 class="text-blue-1 text-end">"</h1>
             </div>
             <div class="card">
-              <h1>"</h1>
+              <h1 class="text-blue-1 text-start">"</h1>
               <p class="subtitle1 bold">
                 We do not see nature with our eyes, but with our understandings
                 and our hearts.
               </p>
-              <p class="subtitle2">-William Hazlitt</p>
-              <h1>"</h1>
+              <p class="subtitle2 mt-s text-start text-gray">-William Hazlitt</p>
+              <h1 class="text-blue-1 text-end">"</h1>
             </div>
             <div class="card">
-              <h1>"</h1>
+              <h1 class="text-blue-1 text-start">"</h1>
               <p class="subtitle1 bold">
                 The only courage that matters is the kind that gets you from one
                 moment to the next.
               </p>
-              <p class="subtitle2">- Mignon McLaughlin</p>
-              <h1>"</h1>
+              <p class="subtitle2 mt-s text-start text-gray">- Mignon McLaughlin</p>
+              <h1 class="text-blue-1 text-end">"</h1>
             </div>
             <div class="card">
-              <h1>"</h1>
+              <h1 class="text-blue-1 text-start">"</h1>
               <p class="subtitle1 bold">
                 No man has a good enough memory to be a successful liar.
               </p>
-              <p class="subtitle2">- Abraham Lincoln</p>
-              <h1>"</h1>
+              <p class="subtitle2 mt-s text-start text-gray">- Abraham Lincoln</p>
+              <h1 class="text-blue-1 text-end">"</h1>
             </div>
           </div>
         </div>
       </div>
 
       <!-- download section -->
-      <div class="download-container" id="download">
+      <div class="download-container flex justify-center bg-blue-1" id="download">
         <div class="section-container">
-          <div class="two-col">
-            <div class="left-col">
-              <h2>How Download the app?</h2>
-              <p class="subtitle2">
+          <div class="two-col flex justify-space-between mt-xl">
+            <div class="left-col align-content-start">
+              <h2 class="my-m text-light font-medium">How Download the app?</h2>
+              <p class="subtitle2 my-m text-light">
                 Just download the app from the store. Simple, nice and
                 user-friendly application of the weather. Only relevant and
                 useful information.
               </p>
-              <div class="btn-container">
+              <div class="btn-container flex justify-center gap-s">
                 <img class="object-fit" src="./assets/appstor.png" alt="" />
                 <img class="object-fit" src="./assets/googleplay.png" alt="" />
               </div>
             </div>
-            <div class="right-col">
-              <img class="object-fit" src="./assets/appdownload1.png" alt="" />
+            <div class="right-col flex justify-center w-55">
+              <img class="object-fit max-w-full h-auto" src="./assets/appdownload1.png" alt="" />
             </div>
           </div>
         </div>
       </div>
       <!-- footer -->
-      <footer class="footer">
+      <footer class="footer flex justify-center bg-dark-blue">
         <div class="section-container">
-          <div class="lvl1">
+          <div class="lvl1 flex align-center justify-space-between m-s">
             <img
               class="object-fit"
               src="./assets/footer-logo.png"
               alt=""
               id="footer-logo"
             />
-            <ul class="menu">
-              <li><a href="./" target="_top">Home</a></li>
-              <li><a href="#features">Features</a></li>
-              <li><a href="#reviews">Reviews</a></li>
-              <li><a href="#download">Download</a></li>
+            <ul class="menu flex no-list-style">
+              <li class="no-list-style mx-m"><a class="text-light no-decoration bold" href="./" target="_top">Home</a></li>
+              <li class="no-list-style mx-m"><a  class="text-light no-decoration bold" href="#features">Features</a></li>
+              <li class="no-list-style mx-m"><a class="text-light no-decoration bold" href="#reviews">Reviews</a></li>
+              <li class="no-list-style mx-m"><a class="text-light no-decoration bold" href="#download">Download</a></li>
             </ul>
-            <div class="icons">
+            <div class="icons flex mr-s">
               <img src="./assets/facebook.svg" alt="" />
               <img src="./assets/instagram.svg" alt="" />
               <img src="./assets/google.svg" alt="" />
             </div>
           </div>
-          <hr />
-          <div class="lvl2">
-            <p class="subtitle2 bold">&#169; All Rights Reserved</p>
+          <hr class="text-gray opacity-05" />
+          <div class="lvl2 flex justify-center align-center py-m w-full">
+            <p class="subtitle2 bold text-light font-medium">&#169; All Rights Reserved</p>
           </div>
         </div>
       </footer>
